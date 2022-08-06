@@ -11,7 +11,7 @@ const SendMessage = (props) => {
     const sendMessage=()=>{
         const data={sender:sender, title:title, message_body: messageBody, recipient: recipient};
         
-        axios.post("http://localhost:3001/user/login", data).then((response) => {
+        axios.post("http://localhost:3001/message", data).then((response) => {
             console.log(response.data);
         });
     }
@@ -21,9 +21,9 @@ const SendMessage = (props) => {
     <input type="text" onChange={(event)=>{setTitle(event.target.value);}}/>
     <label>Message</label>
     <input type="password" onChange={(event)=>{setMessageBody(event.target.value);}}/>
-    <label>message_body:</label>
+    <label>Recipient</label>
     <input type="recipient" onChange={(event)=>{setRecipient(event.target.value);}}/>
-    <button onClick={() => sendMessage()}>Login</button>
+    <button onClick={() => sendMessage()}>Send</button>
 
   </div>;
 };

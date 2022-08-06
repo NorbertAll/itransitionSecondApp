@@ -1,17 +1,19 @@
 const express= require('express');
 const router =express.Router();
-const {Users}= require("../models");
+const {Message}= require("../models");
 
 
-router.get('/', async (req, res)=>{
-    const listOfMessages= await Users.findAll({where: {sender:sender}});
+router.post('/messeges', async (req, res)=>{
+    const {sender } =req.body;
+    console.log(sender)
+    const listOfMessages= await Message.findAll({where: {sender:sender}});
     res.json(listOfMessages);
 });
 
 router.post('/',async (req, res)=>{
     const {sender, title, message_body, recipient} =req.body;
     
-    Users.create({
+    Message.create({
         sender: sender,
         title: title,
         message_body: message_body,
