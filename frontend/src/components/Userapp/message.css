@@ -1,0 +1,54 @@
+.mes {
+    float: left;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .mes:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+  }
+  .mes .sender {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    background-color: dodgerblue;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+  .mes .title {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    background-color: dodgerblue;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+  
+  .mes .message_body {
+    flex: 70%;
+    display: grid;
+    place-content: center;
+  }
+  
+  .mes .recipient {
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: dodgerblue;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }

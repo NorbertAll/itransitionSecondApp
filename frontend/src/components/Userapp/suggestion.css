@@ -1,0 +1,13 @@
+.sugestion{
+    width: 30%;
+    margin-left: auto;
+    background-color: rgb(172, 170, 170);
+    margin-right: auto;
+    cursor: pointer;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+input{
+    width: 30%; 
+}
