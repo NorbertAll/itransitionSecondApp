@@ -1,4 +1,3 @@
-Language: anything you like.
 Web application without registration and authentication. 
 At the start user have to enter its name (just name without password or anything).
 After entering its name user get to the “send a message” form: recipient, title and the message body.
