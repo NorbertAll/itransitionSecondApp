@@ -6,4 +6,4 @@ Backend: Express.js
 Database: MySQL
 
 Description:
-Application for user management where you can register and manage users or a group of users. Applications can be modified later by adding roles to the user, and only the specified role can edit permissions
+Application with the ability to send messages without logging in. Just enter your username
